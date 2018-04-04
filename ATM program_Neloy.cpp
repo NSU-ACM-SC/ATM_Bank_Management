@@ -1,7 +1,6 @@
 //ATM Banking program developed by Asif Ahmed Neloy
 	#include <iostream>
 	#include <iomanip>
-	//#include <time.h>
 	#include <fstream>
 	#include <conio.h>
 	#include <string.h>
@@ -19,12 +18,6 @@
 	    double startBalance;
 	    string COKAccountHolders;
 	    double limit;
-	//virtual bool Deposit(double Dvalue)=0; // manage deposit
-	//virtual bool Transaction(double Dvalue)=0;// use as necessary
-	//virtual void Display_accountBalance()=0;// Show the balance in a nice way
-	//virtual void SetLimit(double NewLimit)=0;
-	//virtual double GetLimit()=0;
-
 	};
 
 
@@ -41,7 +34,6 @@
 	    int count;
 
 	    public:
-	    //void Display_accountBalance();
 	    void deposit();
 	    void withdraw();
         void details();
@@ -164,10 +156,7 @@
 	    void ATMAccountHolders::payBills()
 	    {
 	        system("cls");
-
-
 	        cout<<"\n===========================ATM BILLS PAYMENT SYSTEM==========================\n";
-
 	        cout<<"\n\nThe Names of the Account Holders are :"<<accountHolders<<"\n\n";
 	        cout<<"\tThe Account Holders' address is :"<<accountHoldersAddress<<"\n\n";
 	        cout<<"\tThe Branch location is :"<<branch<<"\n\n";
@@ -201,8 +190,6 @@
 	void ATMAccountHolders::details()
 	    {
 	        system("cls");
-
-
 	        cout<<"\n============================ATM ACCOUNT DETAILS=============================\n\n";
 	        cout<<"\n\nThe Names of the Account Holders are :"<<accountHolders<<"\n\n";
 	        cout<<"\tThe Account Holders' address is :"<<accountHoldersAddress<<"\n\n";
@@ -219,8 +206,6 @@
      void ATMAccountHolders::accountExit()
 	    {
 	        system("cls");
-
-
 	        cout<<"\n============================ATM ACCOUNT EXIT=============================\n\n";
 	        cout<<"\n\n\t\tEXITING...........EXITING...............EXITING\n\n";
 	        cout<<"====================++THANK YOU++============================\n\n";
@@ -228,49 +213,6 @@
 	        system("PAUSE");
 	        exit(1);
 	    }
-
-
-	//==================================================================================================
-	/*class Bills
-	     {
-
-	      double JPS;
-	      double NWC;
-	      double FLOW;
-	      double RENT;
-	      double bills;
-	      void Display_accountBalance();
-	      public:
-	      void jps();
-	      void nwc();
-	      void flow();
-	      void rent();
-
-	      Bills()
-	      {
-	      double JPS = 2000;
-	      double NWC = 1500;
-	      double FLOW = 3500;
-	      double RENT = 14000;
-
-	        }
-	      void Bills::jps()
-
-	        system("cls");
-
-
-	        cout<<"\n============================ATM BILL PAYMENT SYSTEM=============================\n\n";
-	        cout<<"\n\nThe Names of the Account Holders are :"<<accountHolders<<"\n\n";
-	        cout<<"\tThe Account Holders' address is :"<<accountHoldersAddress<<"\n\n";
-	        cout<<"\tThe Branch location is :"<<branch<<"\n\n";
-	        cout<<"\tAccount number :"<<accountNumber<<"\n\n";
-	        cout<<"====================++THANK YOU++============================\n\n";
-	        cout<<"============================+++++++++++++++++++++++============================\n\n";
-	        system("PAUSE");
-	      }
-
-	      };*/
-	//==================================================================================================
 
 	class Limits:public Bank
 	      {
@@ -282,25 +224,13 @@
 	             {}
 
 	      };
-	//==================================================================================================
-	//==================================================================================================
-	//==================================================================================================
+
 	    int main()
 	    {
 	    int e;
 	    ATMAccountHolders p;
-
-	    //system ("Color 1b");
 	        cout<<"\n============================WELCOME TO ATM==================================\n\n";
         cout<<"\t\t\t--------------------\n"<<endl;
-	        //Prompt to show today's date
-	       //cout << "\t\tToday's date is: ";
-	       //Show date and time function
-	         //time_t now;
-	         //time(&now);
-
-	        //printf("%s\n", ctime(&now));;
-	      //Give space for the function of date and time
 	        cout<<"\t\t\t--------------------\n"<<endl;
 	        cout<<"============================WELCOME TO ATM==================================\n\n";
 	//==================================================================================================
